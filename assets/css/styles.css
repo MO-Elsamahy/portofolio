@@ -223,3 +223,32 @@ nav {
 .blog-card:hover {
   transform: translateY(-5px);
 }
+
+.contact-section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contactForm {
+  display: grid;
+  gap: 1rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--shadow);
+  border-radius: 6px;
+}
+
+.social-icons {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.newsletter {
+  display: flex;
+  gap: 1rem;
+}
