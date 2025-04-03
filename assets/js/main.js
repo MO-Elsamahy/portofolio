@@ -89,3 +89,26 @@ document.getElementById('categoryFilter').addEventListener('change', (e) => {
     }
   });
 });
+
+// Form Submission with Formspree
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  
+  try {
+    const response = await fetch('https://formspree.io/f/your-form-id', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    
+    if (response.ok) {
+      alert('Message sent!');
+      e.target.reset();
+    }
+  } catch (error) {
+    alert('Error sending message');
+  }
+});
