@@ -64,3 +64,28 @@ new Chart(ctx, {
     }]
   }
 });
+
+// Blog Search & Filtering
+document.getElementById('searchBlog').addEventListener('input', (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  document.querySelectorAll('.blog-card').forEach(card => {
+    const title = card.querySelector('h3').textContent.toLowerCase();
+    if (title.includes(searchTerm)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
+
+document.getElementById('categoryFilter').addEventListener('change', (e) => {
+  const category = e.target.value;
+  document.querySelectorAll('.blog-card').forEach(card => {
+    const cardCategory = card.dataset.category;
+    if (category === 'all' || cardCategory === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
