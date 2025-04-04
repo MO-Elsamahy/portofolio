@@ -1,4 +1,3 @@
-/* Eco-friendly Color Scheme */
 :root {
   --primary: #2E8B57;
   --secondary: #4682B4;
@@ -9,7 +8,6 @@
   --text-dark: #333333;
 }
 
-/* Dark Mode */
 body.dark-mode {
   --bg: var(--dark-bg);
   --text: var(--text-light);
@@ -17,7 +15,6 @@ body.dark-mode {
   --shadow: rgba(255, 255, 255, 0.1);
 }
 
-/* Light Mode */
 body.light-mode {
   --bg: var(--light-bg);
   --text: var(--text-dark);
@@ -164,91 +161,43 @@ nav {
   margin-left: 1rem;
 }
 
-.research-section {
+/* New Styles for All Pages */
+.section {
   padding: 4rem 2rem;
 }
 
-.filter-buttons {
-  margin: 2rem 0;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.section h2 {
+  margin-bottom: 2rem;
+  color: var(--primary);
 }
 
-.filter-btn {
+.section p {
+  line-height: 1.6;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.button {
   background: var(--secondary);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
 }
 
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.research-card {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px var(--shadow);
-}
-
-.blog-section {
-  padding: 4rem 2rem;
-}
-
-.blog-controls {
-  margin: 2rem 0;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.blog-card {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-}
-
-.contact-section {
-  padding: 4rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#contactForm {
-  display: grid;
-  gap: 1rem;
-}
-
-#contactForm input,
-#contactForm textarea {
-  padding: 0.75rem;
-  border: 1px solid var(--shadow);
-  border-radius: 6px;
-}
-
-.social-icons {
-  margin: 2rem 0;
-  display: flex;
-  gap: 1rem;
-}
-
-.newsletter {
-  display: flex;
-  gap: 1rem;
+.button:hover {
+  background: var(--accent);
 }
