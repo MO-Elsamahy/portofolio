@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="assets/css/styles.css">  <!-- Same head as index.html -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light-mode">
   <nav>
     <!-- Same navigation as index.html -->
   </nav>
 
-  <section class="research-section">
+  <section class="section research-section">
     <h2 class="fade-in">Research & Publications</h2>
     
-    <!-- Filters -->
     <div class="filter-buttons fade-in">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="AI">AI</button>
-      <button class="filter-btn" data-filter="Climate">Climate Change</button>
+      <button class="filter-btn" data-filter="Climate">Climate</button>
     </div>
 
-    <!-- Research Grid -->
     <div class="research-grid fade-in">
-      <div class="research-card" data-tags="AI, Climate">
+      <div class="card" data-tags="AI, Climate">
         <h3>AI-Driven Climate Modeling</h3>
         <p>Published in Nature, 2023</p>
-        <a href="assets/papers/paper1.pdf" class="button">Download PDF</a>
-        <a href="https://doi.org/10.xxxx" class="doi-link">DOI: 10.xxxx</a>
+        <a href="#" class="button">Download PDF</a>
       </div>
-      <!-- Add more research items -->
-    </div>
-
-    <!-- Data Visualization -->
-    <div class="chart-container fade-in">
-      <canvas id="climateChart"></canvas>
+      <div class="card" data-tags="Climate">
+        <h3>Renewable Energy Optimization</h3>
+        <p>IEEE Sustainable Energy, 2022</p>
+        <a href="#" class="button">View DOI</a>
+      </div>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
