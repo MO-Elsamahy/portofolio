@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Same head as index.html -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light-mode">
   <nav>
     <!-- Same navigation as index.html -->
   </nav>
 
-  <section class="contact-section">
+  <section class="section contact-section">
     <h2 class="fade-in">Get in Touch</h2>
     
-    <!-- Contact Form -->
     <form id="contactForm" class="fade-in">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" required></textarea>
-      <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_KEY"></div>
       <button type="submit" class="button">Send Message</button>
     </form>
 
-    <!-- Social Media -->
     <div class="social-icons fade-in">
       <a href="#"><img src="assets/images/linkedin-icon.png" alt="LinkedIn"></a>
       <a href="#"><img src="assets/images/twitter-icon.png" alt="Twitter"></a>
     </div>
-
-    <!-- Newsletter Signup -->
-    <div class="newsletter fade-in">
-      <input type="email" placeholder="Subscribe for updates">
-      <button class="button">Subscribe</button>
-    </div>
   </section>
 
-  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
